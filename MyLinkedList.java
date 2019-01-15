@@ -39,7 +39,10 @@ public class MyLinkedList implements NodeList {
                 //newItem is less, insert it before
                 if (currentItem.previous() != null) {
                     currentItem.previous().setNext(newItem).setPrevious(currentItem.previous());
-                    //currentItem.setPrevious(newItem).setNext(currentItem);
+                    // 1 
+                    // currentItem.setPrevious(newItem).setNext(currentItem);
+                    // just testing, both versions work
+                    // 2
                     newItem.setNext(currentItem).setPrevious(newItem);
                 } else {
                     //we reached the head, so we are adding newItem as root
