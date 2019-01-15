@@ -55,8 +55,6 @@ public class MyLinkedList implements NodeList {
                 System.out.println(newItem.getValue() + " is already present, so do not add it");
                 return false;
             }
-
-
         }
         return false;
     }
